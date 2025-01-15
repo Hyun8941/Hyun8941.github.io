@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Noto Sans KR";
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #001f2e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 60px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.AboutMe {
+    display: flex;
+    gap: 0.5rem;
+    color: #ffffff;
+}
+
+.MeText {
+    color: rgb(185, 185, 185);
+}
+
+.MainContainer {
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: auto;
+    max-height: 80vh;
+    max-width: 90vw;
+    height: 55vh;
+    width: 70vw;
+    color: #001f2e;
+    overflow: auto;
+}
+
+.MainContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .MainContainer {
+        width: 65vw;
+        height: 75vh;
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.h2 {
+    font-size: 1.5rem;
+}
